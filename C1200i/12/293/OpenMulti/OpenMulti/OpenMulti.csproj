@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FB7BD5EC-E5C5-4DBC-BAC9-9252DFFDF7F0}</ProjectGuid>
+    <ProjectGuid>{748B1797-5304-4331-923B-1E611D8EF6F6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OpenMulti</RootNamespace>
