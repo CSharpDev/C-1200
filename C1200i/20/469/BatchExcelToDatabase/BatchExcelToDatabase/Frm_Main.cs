@@ -149,7 +149,7 @@ namespace BatchExcelToDatabase
         {
             List<string> P_list_SheetName = new List<string>();//实例化泛型集合对象
             //连接Excel数据库
-            OleDbConnection olecon = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + P_str_Excel + ";Extended Properties=Excel 8.0");
+            OleDbConnection olecon = new OleDbConnection("Provider=Microsoft.Ace.OleDB.12.0;Data Source=" + P_str_Excel + ";Extended Properties=Excel 8.0");
             olecon.Open();//打开数据库连接
             System.Data.DataTable DTable = olecon.GetSchema("Tables");//实例化表对象
             DataTableReader DTReader = new DataTableReader(DTable);//实例化表读取对象
@@ -201,7 +201,7 @@ namespace BatchExcelToDatabase
             {
                 CloseProcess("EXCEL");//关闭所有Excel进程
                 //获得全部数据    
-                string P_str_OledbCon = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + P_str_Excel + ";Extended Properties=Excel 8.0;";
+                string P_str_OledbCon = "Provider=Microsoft.Ace.OleDB.12.0;Data Source=" + P_str_Excel + ";Extended Properties=Excel 8.0;";
                 OleDbConnection oledbcon = new OleDbConnection(P_str_OledbCon);//实例化Oledb数据库连接对象
                 string P_str_ExcelSql = "";//定义变量，用来记录要执行的Excel查询语句
                 OleDbDataAdapter oledbda = null;//实例化Oledb数据桥接器对象
