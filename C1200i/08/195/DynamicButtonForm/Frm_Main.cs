@@ -52,7 +52,7 @@ namespace DynamicButtonForm
             button4.ImageAlign = ContentAlignment.MiddleCenter;//鼠标离开时改变button4图片位置
         }
         private void button5_MouseLeave(object sender, EventArgs e)
-        {
+        {            
             button5.ImageAlign = ContentAlignment.MiddleCenter;//鼠标离开时改变button5图片位置
         }
         private void button6_MouseMove(object sender, MouseEventArgs e)
@@ -62,6 +62,14 @@ namespace DynamicButtonForm
         private void button6_MouseLeave(object sender, EventArgs e)
         {
             button6.ImageAlign = ContentAlignment.MiddleCenter;//鼠标离开时改变button6图片位置
+        }
+        private void buttonI_MouseLeave(object sender, EventArgs e)
+        {
+            ((Button)sender).ImageAlign = ContentAlignment.MiddleCenter;//鼠标离开时改变button6图片位置
+        }
+        private void buttonI_MouseMove(object sender, MouseEventArgs e)
+        {
+            ((Button)sender).ImageAlign = ContentAlignment.MiddleLeft;//鼠标移动到button5时改变图片位置
         }
     }
 }
